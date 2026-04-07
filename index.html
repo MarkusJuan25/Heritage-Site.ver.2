@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Heritage Homecoming is a cinematic landing page concept built around roots, journey, and homecoming.">
+    <meta name="theme-color" content="#20140d">
+    <meta property="og:title" content="Heritage Homecoming">
+    <meta property="og:description" content="Reconnect with your roots through story and journey.">
+    <meta property="og:image" content="./images/preview.jpg">
+    <meta property="og:image:alt" content="Heritage Homecoming preview banner">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Heritage Homecoming">
+    <meta property="og:locale" content="en_PH">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Heritage Homecoming">
+    <meta name="twitter:description" content="Reconnect with your roots through story and journey.">
+    <meta name="twitter:image" content="./images/preview.jpg">
+    <title>Heritage Homecoming</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="site-shell">
+        <header class="hero" id="top">
+            <div class="hero__frame">
+                <nav class="topbar" aria-label="Primary navigation">
+                    <a class="brand" href="index.html#top" aria-label="Heritage Homecoming">
+                        <span class="brand__mark">
+                            <img src="./images/Heritage Logo PNG.png" alt="Heritage Homecoming logo">
+                        </span>
+                        <span class="brand__wordmark">
+                            <span class="brand__name">Heritage Homecoming</span>
+                            <span class="brand__tag">Reconnect with your roots</span>
+                        </span>
+                    </a>
+
+                    <button
+                        class="topbar__toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="primary-nav"
+                        aria-label="Toggle navigation"
+                        data-nav-toggle
+                    >
+                        <span class="topbar__toggle-box" aria-hidden="true">
+                            <span class="topbar__toggle-bar"></span>
+                            <span class="topbar__toggle-bar"></span>
+                            <span class="topbar__toggle-bar"></span>
+                        </span>
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+
+                    <div class="topbar__nav">
+                        <div class="topbar__links" id="primary-nav" data-nav-panel>
+                            <a href="index.html#top">Home</a>
+                            <a href="#roots">Roots</a>
+                            <a href="#journey">Journey</a>
+                            <a href="#homecoming">Homecoming</a>
+                            <a href="#footer">Connect</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="hero__grid">
+                    <div class="hero__copy" data-reveal>
+                        <p class="hero__hook">Every journey begins somewhere...</p>
+                        <h1>Where your story begins</h1>
+                        <p class="hero__lede">
+                            Return to the places, memories, and traditions that shaped you.
+                            Let your heritage unfold through roots, journey, and homecoming.
+                        </p>
+
+                        <div class="hero__actions">
+                            <a class="button button--primary" href="roots.html">Explore the Story</a>
+                            <a class="button button--secondary" href="journey.html">Start Your Journey</a>
+                        </div>
+
+                    </div>
+
+                    <section class="stage" data-stage data-autoplay-delay="5600" aria-label="Heritage story stage" tabindex="0">
+                        <div class="stage__panels">
+                            <button
+                                class="stage-panel is-active"
+                                type="button"
+                                data-stage-panel
+                                data-kicker="Act I - Origins"
+                                data-title="Your Roots"
+                                data-description="Trace the landscape, memory, and ancestry that first gave your story its name."
+                                data-link="roots.html"
+                                data-link-label="Visit the roots page"
+                                aria-pressed="true"
+                            >
+                                <span class="stage-panel__image stage-panel__image--roots" aria-hidden="true"></span>
+                                <span class="stage-panel__overlay" aria-hidden="true"></span>
+                                <span class="stage-panel__content">
+                                    <strong class="stage-panel__title">Luzon</strong>
+                                    <span class="stage-panel__caption">Visit the roots page</span>
+                                </span>
+                            </button>
+
+                            <button
+                                class="stage-panel"
+                                type="button"
+                                data-stage-panel
+                                data-kicker="Act II - Passage"
+                                data-title="Your Journey"
+                                data-description="Follow the traditions, meals, and shared moments that keep heritage alive."
+                                data-link="journey.html"
+                                data-link-label="Visit the journey page"
+                                aria-pressed="false"
+                            >
+                                <span class="stage-panel__image stage-panel__image--journey" aria-hidden="true"></span>
+                                <span class="stage-panel__overlay" aria-hidden="true"></span>
+                                <span class="stage-panel__content">
+                                    <strong class="stage-panel__title">Visayas</strong>
+                                    <span class="stage-panel__caption">Visit the journey page</span>
+                                </span>
+                            </button>
+
+                            <button
+                                class="stage-panel"
+                                type="button"
+                                data-stage-panel
+                                data-kicker="Act III - Reunion"
+                                data-title="Your Homecoming"
+                                data-description="Return to warmth, reunion, and the feeling of finally arriving where you belong."
+                                data-link="homecoming.html"
+                                data-link-label="Visit the homecoming page"
+                                aria-pressed="false"
+                            >
+                                <span class="stage-panel__image stage-panel__image--homecoming" aria-hidden="true"></span>
+                                <span class="stage-panel__overlay" aria-hidden="true"></span>
+                                <span class="stage-panel__content">
+                                    <strong class="stage-panel__title">Mindanao</strong>
+                                    <span class="stage-panel__caption">Visit the homecoming page</span>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="stage__footer">
+                            <div class="stage__status">
+                                <p class="eyebrow" data-stage-kicker>Act I - Origins</p>
+                                <h2 data-stage-title>Your Roots</h2>
+                                <p data-stage-description>
+                                    Trace the landscape, memory, and ancestry that first gave your story its name.
+                                </p>
+                                <a class="button button--ghost" data-stage-link href="roots.html">Visit the roots page</a>
+                            </div>
+
+                            <div class="stage__controls">
+                                <button class="stage__button" type="button" data-stage-prev aria-label="Previous panel">
+                                    &#10094;
+                                </button>
+                                <button class="stage__button" type="button" data-stage-next aria-label="Next panel">
+                                    &#10095;
+                                </button>
+                            </div>
+
+                            <div class="stage__meta" aria-hidden="true">
+                                <div class="stage__progress">
+                                    <span data-stage-progress></span>
+                                </div>
+                                <div class="stage__count">
+                                    <span data-stage-current>01</span>
+                                    <span>/03</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </header>
+
+        <main role="main">
+            <section class="section section--story" id="roots">
+                <div class="section__heading" data-reveal>
+                    <h2>A Story of Roots, Journey, and Homecoming</h2>
+                    <div class="section__beats">
+                        <p>Trace the first places that held your name.</p>
+                        <p>Follow the paths, traditions, and reunions that bring your heritage back into view.</p>
+                    </div>
+                </div>
+
+                <div class="chapter-grid">
+                    <article class="chapter-card chapter-card--roots" data-reveal data-chapter-card tabindex="0">
+                        <div class="chapter-card__media chapter-card__media--roots" aria-hidden="true">
+                            <span class="chapter-card__tile chapter-card__tile--ben-cab"></span>
+                            <span class="chapter-card__tile chapter-card__tile--burnham"></span>
+                            <span class="chapter-card__tile chapter-card__tile--mines-view"></span>
+                            <span class="chapter-card__tile chapter-card__tile--pma"></span>
+                        </div>
+                        <p class="chapter-card__index">Luzon</p>
+                        <h3>Begin with place</h3>
+                        <p>Use the ancestral house and natural setting to establish memory, history, and identity before anything else.</p>
+                    </article>
+
+                    <article class="chapter-card chapter-card--journey" data-reveal data-chapter-card tabindex="0">
+                        <div class="chapter-card__media chapter-card__media--journey" aria-hidden="true">
+                            <span class="chapter-card__tile chapter-card__tile--fundacion-pacita"></span>
+                            <span class="chapter-card__tile chapter-card__tile--marlboro-country"></span>
+                            <span class="chapter-card__tile chapter-card__tile--vayang"></span>
+                            <span class="chapter-card__tile chapter-card__tile--mt-carmel"></span>
+                        </div>
+                        <p class="chapter-card__index">Visayas</p>
+                        <h3>Let the journey breathe</h3>
+                        <p>Show culture through shared meals, craft, and ritual so the middle of the page feels warm and lived in.</p>
+                    </article>
+
+                    <article class="chapter-card chapter-card--homecoming" data-reveal data-chapter-card tabindex="0">
+                        <div class="chapter-card__media chapter-card__media--homecoming" aria-hidden="true">
+                            <span class="chapter-card__tile chapter-card__tile--coron"></span>
+                            <span class="chapter-card__tile chapter-card__tile--twin-lagoon"></span>
+                            <span class="chapter-card__tile chapter-card__tile--mayon"></span>
+                            <span class="chapter-card__tile chapter-card__tile--wright-park"></span>
+                        </div>
+                        <p class="chapter-card__index">Mindanao</p>
+                        <h3>Land on belonging</h3>
+                        <p>End with reunion and human connection so the campaign closes on emotion, not just a graphic treatment.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section--showcase" id="journey">
+                <div class="showcase__media" data-reveal>
+                    <img src="./images/Heritage FB Banner.jpg" loading="lazy" decoding="async" alt="Heritage Homecoming campaign banner showing roots, journey, and homecoming">
+                </div>
+
+                <div class="showcase__copy">
+                    <div class="section__heading" data-reveal>
+                        <h2>Share your journey with us.</h2>
+                        <div class="section__beats">
+                            <p>Move through places, rituals, and memories that shaped you.</p>
+                            <p>Let every frame feel personal, warm, and lived in.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-list">
+                        <article class="detail-item" data-reveal>
+                            <span>roots &amp; rhythm</span>
+                            <p>Feel culture through music, ritual, and memory.</p>
+                        </article>
+
+                        <article class="detail-item" data-reveal>
+                            <span>journey</span>
+                            <p>Move through places that shaped your story.</p>
+                        </article>
+
+                        <article class="detail-item" data-reveal>
+                            <span>connections</span>
+                            <p>Share the experience with people who understand it.</p>
+                        </article>
+
+                        <article class="detail-item" data-reveal>
+                            <span>heritage</span>
+                            <p>Keep your heritage close, personal, and alive.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="showcase__homecoming section--craft" id="homecoming">
+                    <div class="craft__intro" data-reveal>
+                        <h2>Why reconnecting with your roots matters</h2>
+                        <div class="section__beats section__beats--light">
+                            <p>Reconnecting with your roots deepens identity and belonging.</p>
+                            <p>It strengthens family ties and reminds you where you truly come from.</p>
+                        </div>
+                    </div>
+
+                    <div class="craft__grid">
+                        <article class="craft-item" data-reveal>
+                            <h3>Products</h3>
+                            <p>See other products that celebrate your heritage.</p>
+                        </article>
+
+                        <article class="craft-item" data-reveal>
+                            <h3>Connections</h3>
+                            <p>Connect with others who share your passion for heritage.</p>
+                        </article>
+
+                        <article class="craft-item" data-reveal>
+                            <h3>Refine Your Experience</h3>
+                            <p>Enhance your journey with our refined offerings.</p>
+                        </article>
+
+                        <article class="craft-item" data-reveal>
+                            <h3>Craft Your Journey</h3>
+                            <p>Every step brings you closer to where you belong.</p>
+                        </article>
+                    </div>
+
+                    <img
+                        class="cta__emblem"
+                        src="./images/Heritage Logo PNG.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        aria-hidden="true"
+                    >
+                </div>
+
+            </section>
+
+            <section class="section section--conversion" data-reveal>
+                <div class="conversion__copy">
+                    <p class="eyebrow">Start Your Heritage Journey</p>
+                    <h2>Ready to reconnect with your story?</h2>
+                    <p>Talk to us and begin planning a heritage experience rooted in place, memory, and belonging.</p>
+                </div>
+
+                <div class="conversion__actions">
+                    <a class="button button--primary" href="#footer">Contact Us</a>
+                    <a class="button button--secondary" href="roots.html">Explore the Roots</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer" id="footer">
+            <div class="site-footer__card">
+                <div class="site-footer__banner">
+                    <div class="site-footer__feature site-footer__feature--logos">
+                        <p class="site-footer__feature-title">Official Travel Partner</p>
+                        <img
+                            class="site-footer__highlight-logo"
+                            src="./images/Logo Images/Highlighttours-Logo-WHITE-1024x318-with-BG.jpg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="Highlight Tours logo"
+                        >
+
+                        <div class="site-footer__accreditations" aria-label="Affiliations and accreditations">
+                            <img
+                                class="site-footer__accreditation site-footer__accreditation--aita"
+                                src="./images/Logo Images/AITA-logo2025.png"
+                                loading="lazy"
+                                decoding="async"
+                                alt="AITA logo"
+                            >
+                            <img
+                                class="site-footer__accreditation site-footer__accreditation--dot"
+                                src="./images/Logo Images/DOT-LOGO-1.png"
+                                loading="lazy"
+                                decoding="async"
+                                alt="Department of Tourism Philippines logo"
+                            >
+                            <img
+                                class="site-footer__accreditation site-footer__accreditation--ptaa"
+                                src="./images/Logo Images/PTAA-3X3-1.gif"
+                                loading="lazy"
+                                decoding="async"
+                                alt="PTAA logo"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="site-footer__feature">
+                        <p class="site-footer__feature-title">Talk To Us</p>
+                        <div class="site-footer__feature-copy">
+                            <p>Let us help you plan your next great adventure.</p>
+                            <p>+63 (2) 8373-3212 | +63 (2) 8373-3305</p>
+                            <p>Viber/WhatsApp: +63 906 310 3211</p>
+                            <p>highlight@highlighttours.com.ph</p>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__feature">
+                        <p class="site-footer__feature-title">Visit Us</p>
+                        <div class="site-footer__feature-copy">
+                            <p>Unit 603, 6th Floor, West Insula Condominium</p>
+                            <p>135 West Avenue, Quezon City 1105 Metro Manila, Philippines</p>
+                            <p>Office hours: 9:00 a.m - 6:00 p.m, Monday-Friday except holidays</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="site-footer__bottom">
+                    <div class="site-footer__brand">
+                        <img src="./images/Heritage Logo PNG.png" loading="lazy" decoding="async" alt="Heritage Homecoming logo">
+                        <div>
+                            <p>Heritage Homecoming</p>
+                            <p class="site-footer__legal">&copy; 2026 Heritage Homecoming. All rights reserved.</p>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__social-block">
+                        <span class="site-footer__label">Connect With Us</span>
+
+                        <div class="site-footer__socials" aria-label="Social media links">
+                            <a class="social-link" href="#" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M13.5 22v-8.2h2.77l.41-3.2H13.5V8.56c0-.93.26-1.56 1.59-1.56H16.8V4.14c-.3-.04-1.35-.14-2.56-.14-2.53 0-4.26 1.54-4.26 4.38v2.22H7.12v3.2h2.86V22h3.52Z" fill="currentColor"/>
+                                </svg>
+                            </a>
+                            <a class="social-link" href="#" aria-label="Facebook Messenger">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 2C6.48 2 2 6.15 2 11.27c0 2.92 1.46 5.52 3.75 7.22V22l3.27-1.81c.87.24 1.8.37 2.78.37 5.52 0 10-4.15 10-9.27S17.52 2 12 2Zm1.03 12.46-2.54-2.71-4.95 2.71 5.45-5.78 2.6 2.71 4.88-2.71-5.44 5.78Z" fill="currentColor"/>
+                                </svg>
+                            </a>
+                            <a class="social-link" href="#" aria-label="X">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 4h3.94l4.22 5.7L16.93 4H20l-6.32 7.21L20 20h-3.94l-4.5-6.08L6.23 20H4l6.5-7.41L4 4Z" fill="currentColor"/>
+                                </svg>
+                            </a>
+                            <a class="social-link" href="#" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                                    <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                                    <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
