@@ -227,8 +227,25 @@ function setupStage(stage) {
     startAutoplay();
   };
 
+  const isSafeUrl = (url) => {
+    if (url.startsWith("#") || url.startsWith("/") || url.startsWith("./") || url.startsWith("../")) {
+      return true;
+    }
+
+    try {
+      const parsed = new URL(url, window.location.href);
+      return parsed.protocol === "https:" || parsed.protocol === "http:";
+    } catch {
+      return false;
+    }
+  };
+
   const navigateToLink = (panelLink) => {
     if (!panelLink) {
+      return;
+    }
+
+    if (!isSafeUrl(panelLink)) {
       return;
     }
 
