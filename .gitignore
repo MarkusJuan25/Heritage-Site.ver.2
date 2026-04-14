@@ -1,0 +1,31 @@
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.cert
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if added later)
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Build output
+dist/
+build/
+.cache/
+
+# Logs
+*.log
